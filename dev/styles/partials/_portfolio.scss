@@ -1,0 +1,72 @@
+.portfolio__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+
+    &__heading {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 1.875rem;
+    }
+
+    &__image {
+        width: 100%;
+        display: block;
+    }
+    
+    &__description p {
+
+    }
+
+    &__tools p {
+        margin-bottom: 30px;
+    }
+}
+
+.project--right {
+    @extend .project;
+    text-align: right;
+}
+
+.image-container {
+    box-shadow: 2px 20px 20px 3px $box-shadow;
+    transition: all 0.3s ease-in-out;
+    margin-right: 50px;
+    width: 100%;
+    max-width: 40%;
+
+    &:hover {
+        box-shadow: 4px 5px 30px #b2b2b8;
+    }
+}
+
+.description-container {
+    max-width: 50%;
+}
+
+.description-container--right {
+    @extend .description-container;
+    order: 1;
+}
+
+.image-container--right {
+    @extend .image-container;
+    margin-left: 50px;
+    order: 2;
+}

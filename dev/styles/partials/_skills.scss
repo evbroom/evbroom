@@ -1,0 +1,20 @@
+.skills {
+    background-color: $primary-background;
+    background-size: auto;
+    padding-top: 150px;
+}
+
+.skills__container {
+    color: $color-primary;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 43px;
+    padding-bottom: 120px;
+}
+
+.skills__container i {
+    font-size: 50px;
+}

@@ -1,0 +1,142 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: $base-font;
+    background-color: $main-background;
+}
+
+.wrapper {
+    max-width: 92.139%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+h1,
+h2, {
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    line-height: 1.714;
+    font-weight: $regular;
+    color: $color-secondary;
+    font-size: 0.875rem;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $color-primary;
+}
+
+h2 {
+    color: $color-primary;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    font-weight: $black;
+    letter-spacing: 0.1rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.section-heading--light {
+    @extend h2;
+    color: $color-quaternary;
+}
+
+.accent-circle {
+    width: 100px;
+    height: 100px;
+    background-color: $main-background;
+    border-radius: 50%;
+}
+
+.skills-circle {
+    @extend .accent-circle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border: 5px solid rgba(255,255,255,0.5);
+    border: 5px solid $color-secondary;
+    margin: 25px;
+
+    &:hover {
+        background: $color-tertiary;
+        color: $color-quaternary;
+        border: 2px solid $color-tertiary;
+    }
+}
+
+.accent-circle-top {
+    @extend .accent-circle;
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accent-circle-bottom {
+    @extend .accent-circle;
+    position: relative;
+    bottom: -115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle {
+    width: 61px;
+    height: 61px;
+    background-color: $color-tertiary;
+    border-radius: 50%;
+}
+
+.btn {
+    padding: 10px 24px;
+    font-size: 0.875rem;
+    background: $color-quaternary;
+    border: 2px solid $color-primary;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: $bold;
+    color: $color-primary;
+
+    &__about {
+        @extend .btn;
+        margin-bottom: 7px;
+    }
+
+    &:hover {
+        background: $color-tertiary;
+        color: $color-quaternary;
+        border: 2px solid $color-tertiary;
+    }
+}
+
+footer {
+    background-color: $primary-background;
+    text-align: center;
+
+    & p {
+        padding-bottom: 10px;
+    }
+}
+
+

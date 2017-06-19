@@ -1,0 +1,31 @@
+.contact {
+    background-color: $primary-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & h2 {
+        margin: 40px 0;
+    }
+
+    &__p {
+        font-weight: $light;
+    }
+
+    &--email {
+        font-size: 1.83rem;
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+
+.social-footer {
+    margin-bottom: 20px;
+
+    & i {
+        font-size: 1.5rem;
+        // color: red;
+    }
+}

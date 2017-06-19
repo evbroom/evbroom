@@ -435,16 +435,10 @@ footer {
   text-align: right; }
 
 .image-container, .image-container--right {
-  -webkit-box-shadow: 2px 20px 20px 3px #b2b2b8;
-          box-shadow: 2px 20px 20px 3px #b2b2b8;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  margin-right: 50px;
   width: 100%;
   max-width: 40%; }
-  .image-container:hover, .image-container--right:hover {
-    -webkit-box-shadow: 4px 5px 30px #b2b2b8;
-            box-shadow: 4px 5px 30px #b2b2b8; }
 
 .description-container, .description-container--right {
   max-width: 50%; }
@@ -455,10 +449,26 @@ footer {
           order: 1; }
 
 .image-container--right {
-  margin-left: 50px;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2; }
+
+@media (max-width: 767px) {
+  .project, .project--right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .image-container--right {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0; }
+  .image-container, .image-container--right {
+    max-width: 100%;
+    margin-bottom: 30px; }
+  .description-container, .description-container--right {
+    max-width: 100%;
+    text-align: center; } }
 
 .contact {
   background-color: #222533;

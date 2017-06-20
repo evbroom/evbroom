@@ -207,6 +207,12 @@ h3 {
     color: #fff;
     border: 2px solid #21c2f8; }
 
+@media (max-width: 326px) {
+  .skills-circle {
+    width: 90px;
+    height: 90px;
+    margin: 20px; } }
+
 .accent-circle-top {
   position: relative;
   top: -36px;
@@ -317,6 +323,10 @@ footer {
     margin-top: 22.5px;
     margin-bottom: 22.5px; }
 
+@media (max-width: 325px) {
+  .nav {
+    font-size: 0.9375rem; } }
+
 .banner {
   background: url(../../assets/banner.jpeg);
   background-size: cover;
@@ -414,7 +424,8 @@ footer {
   height: 160px;
   position: absolute;
   top: 56px;
-  z-index: -10; }
+  z-index: -10;
+  left: 50%; }
 
 .btn-container {
   position: relative; }
@@ -566,9 +577,9 @@ footer {
     display: block;
     margin-bottom: 15px; }
 
-.social-footer {
-  margin-bottom: 20px; }
-  .social-footer i {
+.social-icons {
+  margin-bottom: 21px; }
+  .social-icons i {
     font-size: 1.5rem; }
 
 .credits {

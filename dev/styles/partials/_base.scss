@@ -91,6 +91,15 @@ h3 {
     }
 }
 
+@media (max-width: 326px) {
+
+    .skills-circle {
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+    }
+}
+
 .accent-circle-top {
     @extend .accent-circle;
     position: relative;

@@ -12,7 +12,7 @@
         transition: 0.2s color;
 
         &:hover {
-            color: $color-accent;
+            color: $color-tertiary;
         }
     }
 }
@@ -40,9 +40,9 @@
             transition: 0.1s all;
 
             &:hover {
-                color: $color-accent;
+                color: $color-tertiary;
                 padding-bottom: 17px;
-                border-bottom: 5px solid $color-accent;
+                border-bottom: 5px solid $color-tertiary;
             }
         }
     }

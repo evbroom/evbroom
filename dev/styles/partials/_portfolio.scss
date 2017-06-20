@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     margin: 50px 0;
+    align-items: flex-start;
 
     &__heading {
         margin-bottom: 30px;
@@ -33,15 +34,12 @@
     &__tools {
         margin-top: 20px;
         margin-bottom: 30px;
-        font-size: 30px;
+        font-size: 40px;
+        color: $color-primary;
 
         & i {
             margin-right: 10px;
             transition: 0.2s color;
-
-            &:hover {
-                color: $color-tertiary;
-            }
         }
     }
 }
@@ -49,16 +47,17 @@
 .project--right {
     @extend .project;
     text-align: right;
+    align-items: flex-start
 }
 
 .image-container {
-    // box-shadow: 2px 20px 20px 3px $box-shadow;
+    box-shadow: 2px 20px 20px 3px $box-shadow;
     transition: all 0.3s ease-in-out;
     width: 100%;
     max-width: 40%;
 
     &:hover {
-        // box-shadow: 4px 5px 30px #b2b2b8;
+        box-shadow: 4px 5px 30px #b2b2b8;
     }
 }
 
@@ -89,6 +88,7 @@
     .image-container {
         max-width: 100%;
         margin-bottom: 30px;
+        
     }
 
     .description-container {

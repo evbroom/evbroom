@@ -18,6 +18,12 @@
         font-size: 1.83rem;
         display: block;
         margin-bottom: 15px;
+        color:$color-secondary;
+        transition: 0.2s color;
+
+        &:hover {
+            color: $color-tertiary
+        }
     }
 }
 

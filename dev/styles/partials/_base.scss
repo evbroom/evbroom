@@ -57,6 +57,7 @@ h2 {
 
 h3 {
     font-size: 1rem;
+    color: $color-primary;
 }
 
 .section-heading--light {
@@ -83,12 +84,6 @@ h3 {
     border: 5px solid $color-secondary;
     margin: 25px;
     transition: 0.2s all;
-
-    &:hover {
-        background: $color-tertiary;
-        color: $color-quaternary;
-        border: 2px solid $color-tertiary;
-    }
 }
 
 @media (max-width: 326px) {

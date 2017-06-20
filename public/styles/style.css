@@ -150,7 +150,7 @@ p {
   line-height: 1.714;
   font-weight: 400;
   color: #a1b1bc;
-  font-size: 0.875rem; }
+  font-size: 1rem; }
 
 ul {
   list-style-type: none;
@@ -160,6 +160,9 @@ ul {
 a {
   text-decoration: none;
   color: #2c3e50; }
+
+h1 {
+  font-size: 2.5rem; }
 
 h2, .section-heading--light {
   color: #2c3e50;
@@ -175,13 +178,17 @@ h3 {
 .section-heading--light {
   color: #fff; }
 
-.accent-circle, .skills-circle, .accent-circle-top, .accent-circle-bottom {
-  width: 100px;
-  height: 100px;
+.accent-circle, .accent-circle-top, .accent-circle-bottom {
+  width: 76px;
+  height: 76px;
   background-color: #FCFCFC;
   border-radius: 50%; }
 
 .skills-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #FCFCFC;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,7 +199,9 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   border: 5px solid #a1b1bc;
-  margin: 25px; }
+  margin: 25px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all; }
   .skills-circle:hover {
     background: #21c2f8;
     color: #fff;
@@ -200,7 +209,7 @@ h3 {
 
 .accent-circle-top {
   position: relative;
-  top: -50px;
+  top: -36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,7 +222,7 @@ h3 {
 
 .accent-circle-bottom {
   position: relative;
-  bottom: -115px;
+  bottom: -104px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,8 +234,8 @@ h3 {
           align-items: center; }
 
 .inner-circle {
-  width: 61px;
-  height: 61px;
+  width: 45px;
+  height: 45px;
   background-color: #21c2f8;
   border-radius: 50%; }
 
@@ -238,7 +247,9 @@ h3 {
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #2c3e50; }
+  color: #2c3e50;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all; }
   .btn__about {
     margin-bottom: 7px; }
   .btn:hover, .btn__about:hover {
@@ -267,12 +278,14 @@ footer {
   .social-nav i {
     color: #fff;
     margin: 0 15px;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color; }
     .social-nav i:hover {
       color: #1abc9c; }
 
 .main-nav {
-  max-width: 500px;
+  max-width: 550px;
   margin: 0 auto; }
 
 .nav {
@@ -287,22 +300,28 @@ footer {
   margin-right: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 0.868rem;
+  font-size: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .nav__item a:hover {
-    color: #1abc9c;
-    padding-bottom: 53px;
-    border-bottom: 5px solid #1abc9c; }
+  .nav__item {
+    margin: 22.5px 0; }
+    .nav__item a {
+      -webkit-transition: 0.1s all;
+      transition: 0.1s all; }
+      .nav__item a:hover {
+        color: #1abc9c;
+        padding-bottom: 17px;
+        border-bottom: 5px solid #1abc9c; }
   .nav__logo {
-    margin-top: 45px; }
+    margin-top: 22.5px;
+    margin-bottom: 22.5px; }
 
 .banner {
-  background: url(../../assets/banner.jpg);
+  background: url(../../assets/banner.jpeg);
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 72vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,8 +335,48 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .banner__text {
+    color: #fff; }
   .banner--accent {
-    color: #00ffcd; }
+    color: #00ffcd;
+    font-weight: 300; }
+    .banner--accent-top {
+      color: #fff;
+      font-weight: 300; }
+
+.banner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #fff; }
+
+.fed-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 15px; }
+
+@media (max-width: 520px) {
+  .banner-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .fed-container {
+    margin-left: 0; } }
 
 .about {
   margin-bottom: 67px; }
@@ -332,24 +391,27 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative; }
+    position: relative;
+    text-align: center; }
   .about__heading {
     background: #fff;
     margin-top: 33px;
     margin-bottom: 80px; }
   .about__photo {
     border-radius: 50%;
-    border: 10px solid #ecf0f1; }
+    border: 10px solid #ecf0f1;
+    margin-bottom: 30px; }
   .about__text {
     max-width: 960px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 10px; }
+    .about__text:last-of-type {
+      margin-bottom: 50px; }
 
 .vertical-line-top {
   width: 2px;
   background-color: #a1b1bc;
-  height: 178px;
+  height: 160px;
   position: absolute;
   top: 56px;
   z-index: -10; }
@@ -362,7 +424,8 @@ footer {
   background-color: #a1b1bc;
   height: 106px;
   position: absolute;
-  left: 50%; }
+  left: 50%;
+  top: 40px; }
 
 .skills {
   background-color: #222533;
@@ -428,8 +491,16 @@ footer {
   .project__image {
     width: 100%;
     display: block; }
-  .project__tools p {
-    margin-bottom: 30px; }
+  .project__tools {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 30px; }
+    .project__tools i {
+      margin-right: 10px;
+      -webkit-transition: 0.2s color;
+      transition: 0.2s color; }
+      .project__tools i:hover {
+        color: #21c2f8; }
 
 .project--right {
   text-align: right; }
@@ -499,3 +570,10 @@ footer {
   margin-bottom: 20px; }
   .social-footer i {
     font-size: 1.5rem; }
+
+.credits {
+  color: #fff; }
+  .credits a {
+    color: #a1b1bc; }
+    .credits a:hover {
+      color: #1abc9c; }

@@ -28,7 +28,7 @@ p {
     line-height: 1.714;
     font-weight: $regular;
     color: $color-secondary;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 ul {
@@ -40,6 +40,10 @@ ul {
 a {
 	text-decoration: none;
 	color: $color-primary;
+}
+
+h1 {
+    font-size: 2.5rem;
 }
 
 h2 {
@@ -61,20 +65,24 @@ h3 {
 }
 
 .accent-circle {
-    width: 100px;
-    height: 100px;
+    width: 76px;
+    height: 76px;
     background-color: $main-background;
     border-radius: 50%;
 }
 
 .skills-circle {
-    @extend .accent-circle;
+    width: 100px;
+    height: 100px;
+    background-color: $main-background;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     // border: 5px solid rgba(255,255,255,0.5);
     border: 5px solid $color-secondary;
     margin: 25px;
+    transition: 0.2s all;
 
     &:hover {
         background: $color-tertiary;
@@ -86,7 +94,7 @@ h3 {
 .accent-circle-top {
     @extend .accent-circle;
     position: relative;
-    top: -50px;
+    top: -36px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,15 +103,15 @@ h3 {
 .accent-circle-bottom {
     @extend .accent-circle;
     position: relative;
-    bottom: -115px;
+    bottom: -104px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .inner-circle {
-    width: 61px;
-    height: 61px;
+    width: 45px;
+    height: 45px;
     background-color: $color-tertiary;
     border-radius: 50%;
 }
@@ -117,6 +125,7 @@ h3 {
     text-transform: uppercase;
     font-weight: $bold;
     color: $color-primary;
+    transition: 0.2s all;
 
     &__about {
         @extend .btn;

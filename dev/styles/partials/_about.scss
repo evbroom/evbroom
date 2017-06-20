@@ -6,12 +6,11 @@
         flex-direction: column;
         align-items: center;
         position: relative;
+        text-align: center;
     }
 
     &__heading {
         background: $color-quaternary;
-        // border-top: 8px solid $color-quaternary;
-        // border-bottom: 8px solid $color-quaternary;
         margin-top: 33px;
         margin-bottom: 80px;
     }
@@ -19,13 +18,17 @@
     &__photo {
         border-radius: 50%;
         border: 10px solid $photo-border;
+        margin-bottom: 30px;
     }
 
     &__text {
         max-width: 960px;
-        margin-top: 30px;
-        margin-bottom: 50px;
         text-align: center;
+        margin-bottom: 10px;
+
+        &:last-of-type {
+            margin-bottom: 50px;
+        }
     }
 
 }
@@ -33,7 +36,7 @@
 .vertical-line-top {
     width: 2px;
     background-color: $color-secondary;
-    height: 178px;
+    height: 160px;
     position: absolute;
     top: 56px;
     z-index: -10;
@@ -48,5 +51,6 @@
     background-color: $color-secondary;
     height: 106px;
     position: absolute;
-    left: 50%;  
+    left: 50%;
+    top: 40px;  
 }

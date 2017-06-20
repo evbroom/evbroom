@@ -7,26 +7,25 @@
     <script src="https://use.fontawesome.com/49faf7da73.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="public/styles/style.css">
     <title>Evan Broom | Portfolio</title>
 </head>
 
 <body>
-    
+
     <header>
         <div class='social-nav'>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-github"></i>
-            <i class="fa fa-linkedin"></i>
+            <a href='https://twitter.com/evbroom' target='_blank'><i class="fa fa-twitter"></i></a>
+            <a href='https://github.com/evbroom' target='_blank'><i class="fa fa-github"></i></a>
+            <a href='https://www.linkedin.com/in/evan-b-792b6913b/' target='_blank'><i class="fa fa-linkedin"></i></a>
         </div>
         <div class='wrapper'>
             <nav class='main-nav'>
                 <ul class='nav'>
-                    <li class='nav__item'><a href="">About</a></li>
-                    <li class='nav__item'><a href="">Portfolio</a></li>
-                    <li class='nav__logo'><a href=""><img src="http://fillmurray.com/g/105/86" alt=""></a></li>
-                    <li class='nav__item'><a href="">Skills</a></li>
-                    <li class='nav__item'><a href="">Contact</a></li>
+                    <li class='nav__item'><a href="#about">About</a></li>
+                    <li class='nav__item'><a href="#skills">Skills</a></li>
+                    <li class='nav__item'><a href="#portfolio">Portfolio</a></li>
+                    <li class='nav__item'><a href="#contact">Contact</a></li>
                 </ul>
                 <!--./nav-->
             </nav>
@@ -37,13 +36,20 @@
     <main>
 
         <section class='banner'>
-            <div>
-                <h1>Banner <span class='banner--accent'>text</span> here</h1>
-            </div>
+            <h1>
+                <div class='banner-container'>
+                    <div class='name-text'>Evan Broom</div>
+                    <div class='fed-container'>
+                        <div class='top-text'><span class='banner--accent-top'>Front-End</span></div>
+                        <div class='bottom-text'><span class='banner--accent'>Web Developer</span></div>
+                    </div>
+                </div>
+                <span class='banner--accent'></span>
+            </h1>
         </section>
         <!--./banner-->
 
-        <section class='about'>
+        <section id='about' class='about'>
             <div class='wrapper'>
                 <div class='about__container'>
                     <div class='accent-circle-top'>
@@ -51,12 +57,16 @@
                     </div>
                     <h2 class='about__heading'>About Me</h2>
                     <div class='vertical-line-top'></div>
-                    <img class="about__photo" src="https://www.fillmurray.com/201/201" alt="">
-                    <p class='about__text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim voluptates quia eos beatae numquam earum
-                        natus perspiciatis ab praesentium reiciendis, itaque, libero facilis dolorum explicabo neque aliquam,
-                        voluptas odit et.</p>
+                    <img class="about__photo" src="assets/portrait.jpg" alt="My portrait. In the photo I'm sitting in a red chair, facing the camera, smiling. I'm wearing a red striped collared shirt. I have thin-framed glasses on.">
+                    <p class='about__text'>Hello! I am a Front End Web Developer based in Toronto, Canada. I enjoy working in front end web development
+                        because I get to be part of solutions for everyday users.</p>
+                    <p class='about__text'>My previous career was in communications at an investment firm, which means I am good at handling tight
+                        deadlines, managing online content, and focusing on the user's experience. I am eager to work at
+                        a company that tackles interesting and engaging problems.</p>
+                    <p class='about__text'>When I'm away from my computer, I'm likely listening to a podcast, cracking open a good book, or practicing
+                        my omlette flip.</p>
                     <div class='btn-container'>
-                        <button class='btn__about'>View My Portfolio</button>
+                        <a href='#portfolio' class='btn__about'>View My Portfolio</a>
                         <div class='vertical-line-bottom'></div>
                     </div>
                     <!--./btn-container-->
@@ -70,36 +80,36 @@
         </section>
         <!--./about-->
 
-        <section class='skills'>
+        <section id='skills' class='skills'>
             <div class='wrapper'>
                 <h2 class='section-heading--light'>Skills</h2>
                 <div class='skills__container'>
                     <div class='skills-circle'>
-                        <i class="devicon-html5-plain-wordmark"></i>
+                        <i class="devicon-html5-plain-wordmark" title='html5'></i>
                     </div>
                     <div class="skills-circle">
-                        <i class="devicon-css3-plain-wordmark"></i>
+                        <i class="devicon-css3-plain-wordmark" title='css3'></i>
                     </div>
                     <div class="skills-circle">
-                        <i class="devicon-sass-original"></i>
+                        <i class="devicon-sass-original" title='sass'></i>
                     </div>
                     <div class="skills-circle">
-                        <i class="devicon-jquery-plain-wordmark"></i>
+                        <i class="devicon-jquery-plain-wordmark" title='jquery'></i>
                     </div>
                     <div class="skills-circle">
-                        <i class="devicon-javascript-plain"></i>
+                        <i class="devicon-javascript-plain" title='javascript'></i>
                     </div>
                     <div class="skills-circle">
-                        <i class="devicon-react-original-wordmark"></i>
+                        <i class="devicon-react-original-wordmark" title='react'></i>
                     </div>
                     <div class="skills-circle">
-                        <i class="devicon-gulp-plain"></i>
+                        <i class="devicon-gulp-plain" title='gulp'></i>
                     </div>
                     <!--<div class="skills-circle">
                         <i class="devicon-github-plain-wordmark"></i>
                     </div>-->
                     <div class="skills-circle">
-                        <i class="devicon-git-plain-wordmark"></i>
+                        <i class="devicon-git-plain-wordmark" title='git'></i>
                     </div>
                 </div>
             </div>
@@ -108,7 +118,7 @@
             <!-- use some fun facts section-->
         </section>
 
-        <section class='portfolio'>
+        <section id='portfolio' class='portfolio'>
             <div class='wrapper'>
                 <div class='portfolio__container'>
                     <div class='accent-circle-top'>
@@ -116,26 +126,81 @@
                     </div>
                     <h2>Portfolio</h2>
                     <div class='project-container'>
-
-                        <div class='project'>
+                        
+                        <!--<div class='project'>
                             <div class='image-container'>
                                 <img class='project__image' src="https://unsplash.it/500/300" alt="">
                             </div>
-                            <!--./image-container-->
+                            
                             <div class='description-container'>
                                 <div class='project__heading'>
-                                    <h3 class='project__title'>Project Title</h3>
+                                    <h3 class='project__title'>PSD Conversion</h3>
                                 </div>
-                                <!--./project__heading-->
+                                
                                 <div class='project__description'>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, illum eligendi suscipit,
                                         in, aperiam.</p>
                                 </div>
-                                <!--./project__description-->
+                               
                                 <div class='project__tools'>
-                                    <p>Tech1, Tech2, Tech3</p>
+                                    <i class="devicon-html5-plain-wordmark"></i>
+                                    <i class="devicon-css3-plain-wordmark"></i>
+                                    <i class="devicon-sass-original"></i>
                                 </div>
                                 <button class='btn'>View Live</button>
+                            </div>
+                           
+                        </div>-->
+
+                        <div class='project--right'>
+                            <div class='image-container--right'>
+                                <img class='project__image' src="/assets/project-litlist.jpg" alt="">
+                            </div>
+                            <!--./image-container-->
+                            <div class='description-container'>
+                                <div class='project__heading'>
+                                    <h3 class='project__title'>Agency API App</h3>
+                                </div>
+                                <!--./project__heading-->
+                                <div class='project__description'>
+                                    <p>A group project where we used the SongKick and Musikki API's to create a collaborative curated list of upcoming concerts in a users area. The list is publicly shareable.</p>
+                                </div>
+                                <!--./project__description-->
+                                <div class='project__tools'>
+                                    <i class="devicon-javascript-plain"></i>
+                                    <i class="devicon-jquery-plain-wordmark"></i>
+                                    <i class="devicon-html5-plain-wordmark"></i>
+                                    <i class="devicon-css3-plain-wordmark"></i>
+                                    <i class="devicon-sass-original"></i>
+                                </div>
+                                <a href='https://yellow-jackets.github.io/Songkick-API-Project/' target='_blank'><button class='btn'>View Live</button></a>
+                            </div>
+                            <!--./description-container-->
+                        </div>
+                        <!--./project-->
+
+                        <div class='project'>
+                            <div class='image-container'>
+                                <img class='project__image' src="assets/project-cageapp.jpg" alt="">
+                            </div>
+                            <!--./image-container-->
+                            <div class='description-container'>
+                                <div class='project__heading'>
+                                    <h3 class='project__title'>REST API Web Application</h3>
+                                </div>
+                                <!--./project__heading-->
+                                <div class='project__description'>
+                                    <p>An Interactive site that uses The MovieDB API to get a list of Nic Cage movies.</p>
+                                </div>
+                                <!--./project__description-->
+                                <div class='project__tools'>
+                                    <i class="devicon-javascript-plain"></i>
+                                    <i class="devicon-jquery-plain-wordmark"></i>
+                                    <i class="devicon-html5-plain-wordmark"></i>
+                                    <i class="devicon-css3-plain-wordmark"></i>
+                                    <i class="devicon-sass-original"></i>
+                                </div>
+                                <a href='www.evanbroom.com/rest-api-app/'><button class='btn'>View Live</button></a>
                             </div>
                             <!--./description-container-->
                         </div>
@@ -143,71 +208,24 @@
 
                         <div class='project--right'>
                             <div class='image-container--right'>
-                                <img class='project__image' src="https://unsplash.it/500/300" alt="">
+                                <img class='project__image' src="assets/project-over.jpg" alt="">
                             </div>
                             <!--./image-container-->
                             <div class='description-container'>
                                 <div class='project__heading'>
-                                    <h3 class='project__title'>Project Title</h3>
+                                    <h3 class='project__title'>Responsive PSD Conversion</h3>
                                 </div>
                                 <!--./project__heading-->
                                 <div class='project__description'>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, illum eligendi suscipit,
-                                        in, aperiam.</p>
+                                    <p>PSD file into responsive webpage</p>
                                 </div>
                                 <!--./project__description-->
                                 <div class='project__tools'>
-                                    <p>Tech1, Tech2, Tech3</p>
+                                    <i class="devicon-html5-plain-wordmark"></i>
+                                    <i class="devicon-css3-plain-wordmark"></i>
+                                    <i class="devicon-sass-original"></i>
                                 </div>
-                                <button class='btn'>View Live</button>
-                            </div>
-                            <!--./description-container-->
-                        </div>
-                        <!--./project-->
-
-                        <div class='project'>
-                            <div class='image-container'>
-                                <img class='project__image' src="https://unsplash.it/500/300" alt="">
-                            </div>
-                            <!--./image-container-->
-                            <div class='description-container'>
-                                <div class='project__heading'>
-                                    <h3 class='project__title'>Project Title</h3>
-                                </div>
-                                <!--./project__heading-->
-                                <div class='project__description'>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, illum eligendi suscipit,
-                                        in, aperiam.</p>
-                                </div>
-                                <!--./project__description-->
-                                <div class='project__tools'>
-                                    <p>Tech1, Tech2, Tech3</p>
-                                </div>
-                                <button class='btn'>View Live</button>
-                            </div>
-                            <!--./description-container-->
-                        </div>
-                        <!--./project-->
-
-                        <div class='project--right'>
-                            <div class='image-container--right'>
-                                <img class='project__image' src="https://unsplash.it/500/300" alt="">
-                            </div>
-                            <!--./image-container-->
-                            <div class='description-container'>
-                                <div class='project__heading'>
-                                    <h3 class='project__title'>Project Title</h3>
-                                </div>
-                                <!--./project__heading-->
-                                <div class='project__description'>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, illum eligendi suscipit,
-                                        in, aperiam.</p>
-                                </div>
-                                <!--./project__description-->
-                                <div class='project__tools'>
-                                    <p>Tech1, Tech2, Tech3</p>
-                                </div>
-                                <button class='btn'>View Live</button>
+                                <a href='www.evanbroom.com/psd-conversion' target='_blank'><button class='btn'>View Live</button></a>
                             </div>
                             <!--./description-container-->
                         </div>
@@ -221,22 +239,28 @@
         </section>
         <!--./portfolio-->
 
-        <section class='contact'>
+        <section id='contact' class='contact'>
             <h2 class='section-heading--light'>Contact</h2>
             <div>
                 <p class='contact__p'>email me at:<span class='contact--email'>hello@evanbroom.com</span></p>
                 <div class="social-nav social-footer">
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-github"></i>
-                    <i class="fa fa-linkedin"></i>
+                    <a href='https://twitter.com/evbroom' target='_blank'><i class="fa fa-twitter"></i></a>
+                    <a href='https://github.com/evbroom' target='_blank'><i class="fa fa-github"></i></a>
+                    <a href='https://www.linkedin.com/in/evan-b-792b6913b/' target='_blank'><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
         </section>
 
         <footer>
             <p>© 2017 Evan Broom</p>
+            <p class='credits'>Banner Photo by <a href="https://unsplash.com/photos/Ki0dpxd3LGc" target='_blank'>Thomas Shellberg</a>. Portrait
+                by <a href='https://www.pamlau.com' target='_blank'>Pam Lau</a>.</p>
         </footer>
 
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="public/scripts/main.js"></script>
 </body>
+
 </html>

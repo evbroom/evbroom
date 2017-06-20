@@ -1,0 +1,11 @@
+.credits {
+    color: $color-quaternary;
+
+    & a {
+       color: $color-secondary;
+
+       &:hover {
+            color: $color-accent
+       } 
+    }
+}

@@ -22,7 +22,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('scripts', () => {
-  return gulp.src('./dev/scripts/app.js')
+  return gulp.src('./dev/scripts/main.js')
     .pipe(babel({
       presets: ['es2015']
     }))

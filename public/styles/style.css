@@ -266,27 +266,6 @@ footer {
   footer p {
     padding-bottom: 10px; }
 
-.social-nav {
-  height: 50px;
-  background-color: #222533;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .social-nav i {
-    color: #fff;
-    margin: 0 15px;
-    font-size: 1.25rem;
-    -webkit-transition: 0.2s color;
-    transition: 0.2s color; }
-    .social-nav i:hover {
-      color: #21c2f8; }
-
 .main-nav {
   max-width: 550px;
   margin: 0 auto; }
@@ -407,7 +386,9 @@ footer {
   .about__photo {
     border-radius: 50%;
     border: 10px solid #ecf0f1;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    width: 210px;
+    height: 210px; }
   .about__text {
     max-width: 960px;
     text-align: center;

@@ -27,10 +27,21 @@
     }
 }
 
-.social-icons {
-    margin-bottom: 21px;
-
-    & i {
-        font-size: 1.5rem;
+.social-nav {
+    height: 50px;
+     background-color: #222533;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ 
+     & i {
+         color: $color-quaternary;
+         margin: 0 15px;
+         font-size: 1.25rem;
+         transition: 0.2s color;
+ 
+         &:hover {
+             color: $color-tertiary;
+        }
     }
-}
+ }

@@ -570,10 +570,26 @@ footer {
     .contact--email:hover {
       color: #21c2f8; }
 
-.social-icons {
-  margin-bottom: 21px; }
-  .social-icons i {
-    font-size: 1.5rem; }
+.social-nav {
+  height: 50px;
+  background-color: #222533;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .social-nav i {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 1.25rem;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color; }
+    .social-nav i:hover {
+      color: #21c2f8; }
 
 .credits {
   color: #fff; }
